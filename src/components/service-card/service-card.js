@@ -4,22 +4,20 @@ import './service-card.css';
 
 
 class ServiceCard extends Component {
-  render(props) {
-
-return(
-  <div>
-    <div >
-      <section>
-        <div>
+  render() {
+    const { description } =  this.props;
+    return(
+      <div>
+        <div >
+          <section>
+            <div>
+            </div>
+            <div>{description}</div>
+          </section>
         </div>
-        <div>{this.props.description}</div>
-      </section>
-    </div>
-  </div>
-)
-
-
-}
+      </div>
+    )
+  }
 }
 
 export default ServiceCard;
