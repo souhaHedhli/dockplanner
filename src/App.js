@@ -51,9 +51,7 @@ class App extends Component {
         </Row>
         </section>
         <Row>
-        <tbody>
-          {cards.map((card, i) => <ServiceCard {...card} key={i} />)}
-        </tbody>
+          {cards.map(card => <ServiceCard {...card} />)}
         </Row>
       </Container>
     );
