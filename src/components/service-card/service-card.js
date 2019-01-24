@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {Component } from 'react';
 import './service-card.css';
 //import { Container, Row, Col } from 'reactstrap';
 
 
-const ServiceCard = (props) =>{
+class ServiceCard extends Component {
+  render(props) {
   /*constructor (props) {
     super(props);
     let card ={
@@ -17,21 +18,20 @@ const ServiceCard = (props) =>{
 
 return(
   <div>
-    <ServiceCard >
+    <div >
       <section>
         <div>
-          for {props.client}
         </div>
         <div>
          {props.description}
         </div>
       </section>
-    </ServiceCard>
+    </div>
   </div>
 )
 
 
-
+}
 }
 
 export default ServiceCard;
