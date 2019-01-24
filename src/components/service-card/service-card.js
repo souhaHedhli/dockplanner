@@ -4,7 +4,7 @@ import {  Row, Col } from 'reactstrap';
 
 
 const ServiceCard = (props) =>{
-  const { description, client, image, backColor } =  this.props
+  const { description, client, image, backColor } =  props
 return(
     <section >
       <Row className='service-section {backColor}' >
