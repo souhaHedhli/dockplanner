@@ -1,6 +1,6 @@
 import React from 'react';
 import './nav-bar.css';
-import logo from '../../../assets/logo.svg'
+import logoNav from '../../../assets/logo-title.svg'
 
 import {
   Collapse,
@@ -30,9 +30,9 @@ import {
   }
   render() {
     return (
-      <div>
-        <Navbar className='nav-style' expand="md">
-        <img src={logo} alt='logo' className='logo-style' />
+      <div className=''>
+        <Navbar className='nav-style'  expand="md">
+        <img src={logoNav} alt='logo with title' className='logo-nav-style' />
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
