@@ -5,16 +5,6 @@ import './service-card.css';
 
 class ServiceCard extends Component {
   render(props) {
-  /*constructor (props) {
-    super(props);
-    let card ={
-        client: props.client,
-        text: props.description,
-        image: props.image,
-        backColor: props.backColor,
-        country: true
-    }
-  } */
 
 return(
   <div>
@@ -22,9 +12,7 @@ return(
       <section>
         <div>
         </div>
-        <div>
-         {props.description}
-        </div>
+        <div>{this.props.description}</div>
       </section>
     </div>
   </div>
