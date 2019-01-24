@@ -51,7 +51,7 @@ class App extends Component {
         </Row>
         </section>
         <Row>
-          {cards.map(card => <ServiceCard {...card} />)}
+          {cards.map((card, i) => <ServiceCard {...card} key={i} />)}
         </Row>
       </Container>
     );
