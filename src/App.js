@@ -11,22 +11,23 @@ import forPatientsImage from  './assets/forPatientsImage.png'; */
 const p1 = 'We want patients to find the perfect doctor and book an appointment'
 const p2 = 'We also help doctors to better manage their practice and build their online'
 
+// const card2 = {
+//   client:'Doctors',
+//   description:'Save time managing visits and cut no-shows by half',
+//   /*  image: forDoctorsImage,*/
+//   backColor: '#3d83df',
+//   country: false
+// }
+// const card1 = {
+//   client:'Patients',
+//   description:'Find a doctor, book a visit and solve any health-related doubt',
+//   /*image: forPatientsImage, */
+//   backColor: '#00ccb1',
+//   country: true
+// }
+
 class App extends Component {
   render() {
-    const card2 =   {
-                   client:'Doctors',
-                    description:'Save time managing visits and cut no-shows by half',
-                  /*  image: forDoctorsImage,*/
-                    backColor: '#3d83df',
-                    country: false
-                 }
-                 const card1 = {
-                               client:'Patients',
-                                description:'Find a doctor, book a visit and solve any health-related doubt',
-                                /*image: forPatientsImage, */
-                                backColor: '#00ccb1',
-                                country: true
-                              }
     return (
       <Container>
         <NavBar className= 'nav-shadow'/>
@@ -51,12 +52,12 @@ class App extends Component {
         </Row>
         </section>
         <Row>
-        <ServiceCard {...card1} />
-        <ServiceCard {...card2} />
+        <ServiceCard />
+        <ServiceCard />
         </Row>
       </Container>
     );
+    }
   }
-}
 
 export default App;
