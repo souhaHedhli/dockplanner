@@ -14,36 +14,19 @@ const p2 = 'We also help doctors to better manage their practice and build their
 const cards = [{
   client:'Doctors',
   description:'Save time managing visits and cut no-shows by half',
-  /*  image: forDoctorsImage,*/
+  image: forDoctorsImage,
   backColor: '#3d83df',
   country: false
 }, {
   client:'Patients',
   description:'Find a doctor, book a visit and solve any health-related doubt',
-  /*image: forPatientsImage, */
+  image: forPatientsImage,
   backColor: '#00ccb1',
   country: true
 }]
 
 class App extends Component {
   render() {
-<<<<<<< HEAD
-    const card2 =   {
-                   client:'Doctors',
-                    description:'Save time managing visits and cut no-shows by half',
-                    image: forDoctorsImage,
-                    backColor: 'doctorsBackground',
-                    country: false
-                 }
-                 const card1 = {
-                               client:'Patients',
-                                description:'Find a doctor, book a visit and solve any health-related doubt',
-                                image: forPatientsImage,
-                                backColor: 'patientsBackground',
-                                country: true
-                              }
-=======
->>>>>>> fe1ae75382a0ec8cc6eff430c0717bac891bbe38
     return (
       <Container>
         <NavBar className= 'nav-shadow'/>
