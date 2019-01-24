@@ -4,8 +4,8 @@ import { Container, Row, Col } from 'reactstrap';
 import NavBar from './components/shared/nav-bar/nav-bar.js';
 import logo from './assets/logo.png'
 import ServiceCard from './components/service-card/service-card.js';
-/*import forDoctorsImage from  './assets/forDoctorsImage.png';
-import forPatientsImage from  './assets/forPatientsImage.png'; */
+import forDoctorsImage from  './assets/forDoctorsImage.png';
+import forPatientsImage from  './assets/forPatientsImage.png';
 
 
 const p1 = 'We want patients to find the perfect doctor and book an appointment'
@@ -16,15 +16,15 @@ class App extends Component {
     const card2 =   {
                    client:'Doctors',
                     description:'Save time managing visits and cut no-shows by half',
-                  /*  image: forDoctorsImage,*/
-                    backColor: '#3d83df',
+                    image: forDoctorsImage,
+                    backColor: 'doctorsBackground',
                     country: false
                  }
                  const card1 = {
                                client:'Patients',
                                 description:'Find a doctor, book a visit and solve any health-related doubt',
-                                /*image: forPatientsImage, */
-                                backColor: '#00ccb1',
+                                image: forPatientsImage,
+                                backColor: 'patientsBackground',
                                 country: true
                               }
     return (

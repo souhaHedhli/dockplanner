@@ -1,0 +1,13 @@
+.service-section{
+  display: flex;
+  justify-content: space-around;
+}
+.service-image{
+  width:
+}
+.patientsBackground{
+  background-color: #00ccb1
+}
+.doctorsBackground{
+  background-color: #3d83df
+}

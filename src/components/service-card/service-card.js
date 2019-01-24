@@ -1,37 +1,36 @@
 import React from 'react';
 import './service-card.css';
-//import { Container, Row, Col } from 'reactstrap';
+import {  Row, Col } from 'reactstrap';
 
 
 const ServiceCard = (props) =>{
-  /*constructor (props) {
-    super(props);
-    let card ={
-        client: props.client,
-        text: props.description,
-        image: props.image,
-        backColor: props.backColor,
-        country: true
-    }
-  } */
-
+  const { description } =  this.props
+  const { client } =  this.props
+  const { image } =  this.props
+  const { backColor } =  this.props
 return(
-  <div>
-    <ServiceCard >
-      <section>
-        <div>
-          for {props.client}
-        </div>
-        <div>
-         {props.description}
-        </div>
-      </section>
-    </ServiceCard>
-  </div>
+    <section >
+      <Row className='service-section {backColor}' >
+        <Col >
+          <Row>
+            <Col>
+              <span> For  {client} </span>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              {description}
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <img src={image} alt='service' />
+           </Col>
+          </Row>
+        </Col>
+      </Row>
+    </section>
 )
-
-
-
 }
 
 export default ServiceCard;
