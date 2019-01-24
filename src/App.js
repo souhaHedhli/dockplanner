@@ -15,13 +15,13 @@ const cards = [{
   client:'Doctors',
   description:'Save time managing visits and cut no-shows by half',
   image: forDoctorsImage,
-  backColor: '#3d83df',
+  bgClass: 'bg-doctors',
   country: false
 }, {
   client:'Patients',
   description:'Find a doctor, book a visit and solve any health-related doubt',
   image: forPatientsImage,
-  backColor: '#00ccb1',
+  bgClass: 'bg-patients',
   country: true
 }]
 
