@@ -1,32 +1,30 @@
 import React from 'react';
 import './service-card.css';
-import {  Row, Col } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 
 
 const ServiceCard = (props) =>{
   const { description, client, image, bgClass } =  props
 return(
-    <section >
-      <Row className={`service-section ${bgClass}`} >
-        <Col >
+    <Container >
+      <Row className={`radius ${bgClass}`} >
           <Row>
-            <Col>
-              <span> For  {client} </span>
+            <Col sm='5'>
+              <div> For  {client} </div>
             </Col>
           </Row>
           <Row>
             <Col>
-              {description}
+              <div>  {description} </div>
             </Col>
           </Row>
           <Row>
             <Col>
-              <img src={image} alt='service' />
+              <img className='image-style'src={image} alt='service' />
            </Col>
           </Row>
-        </Col>
       </Row>
-    </section>
+    </Container>
 )
 }
 

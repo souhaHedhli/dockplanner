@@ -1,7 +1,4 @@
-.service-section{
-  display: flex;
-  justify-content: space-around;
-}
+
 .service-image{
   width:
 }
@@ -10,4 +7,14 @@
 }
 .doctorsBackground{
   background-color: #3d83df
+}
+.image-style{
+  width: 50%
+}
+.radius{
+  border-radius: 10px;
+  padding-bottom: 190px;
+  padding-left: 30px;
+  padding-right: 30px ;
+  display: block;
 }
