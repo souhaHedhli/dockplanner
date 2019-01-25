@@ -32,3 +32,19 @@
   line-height: 1.75;
   font-weight: 400;
 }
+.bg-patients{
+  background-color: #00ccb1
+}
+.bg-doctors{
+  background-color: #3d83df
+}
+.service-section{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap!important;
+}
+.service{
+  display: block;
+  max-width: 100%;
+  padding:45px
+}

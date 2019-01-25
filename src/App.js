@@ -7,22 +7,20 @@ import ServiceCard from './components/service-card/service-card.js';
 import forDoctorsImage from  './assets/forDoctorsImage.png';
 import forPatientsImage from  './assets/forPatientsImage.png';
 
-
 const p1 = 'We want patients to find the perfect doctor and book an appointment'
 const p2 = 'We also help doctors to better manage their practice and build their online'
-
 const cards = [{
-  client:'Doctors',
-  description:'Save time managing visits and cut no-shows by half',
-  image: forDoctorsImage,
-  bgClass: 'bg-doctors',
-  country: false
-}, {
   client:'Patients',
   description:'Find a doctor, book a visit and solve any health-related doubt',
   image: forPatientsImage,
   bgClass: 'bg-patients',
   country: true
+}, {
+  client:'Doctors',
+  description:'Save time managing visits and cut no-shows by half',
+  image: forDoctorsImage,
+  bgClass: 'bg-doctors',
+  country: false
 }]
 
 class App extends Component {
@@ -50,9 +48,11 @@ class App extends Component {
           </Col>
         </Row>
         </section>
-        <Row>
+        <section className='service'>
+        <Row className='service-section'>
           {cards.map((card, i) => <ServiceCard {...card} key={i} />)}
         </Row>
+        </section>
       </Container>
     );
     }
