@@ -1,15 +1,10 @@
 
-.service-image{
-  width:
-}
+
 .patientsBackground{
   background-color: #00ccb1
 }
 .doctorsBackground{
   background-color: #3d83df
-}
-.image-style{
-  width: 50%
 }
 .radius{
   border-radius: 10px;
@@ -17,4 +12,33 @@
   padding-left: 30px;
   padding-right: 30px ;
   display: block;
+}
+.card {
+  border-radius: 10px;
+  padding: 1.375em 2.5em 0;
+  margin: 10px;
+  overflow: hidden;
+  height: 380px;
+  width: 500px;
+}
+.card h6 {
+  text-align: left;
+  color: white
+}
+.card h3 {
+  text-align: left;
+ color: white
+}
+.card img {
+  height: 214px;
+  margin-left: 190px;
+}
+.country-select {
+  height: 40px;
+  width: 150px;
+  margin-right: -150px;
+}
+.select-img {
+  display: flex;
+  width: 400px;
 }

@@ -1,0 +1,30 @@
+
+.location-picture {
+  border: solid 1px #f2f2f2;
+  margin: 16px;
+  border-radius: 7px;
+}
+.location-picture-bottom {
+  display: flex;
+  justify-content: space-around;
+}
+.location-picture-bottom  p {
+  color: #827388;
+  font-size: 18px;
+  margin-top: 6px;
+  text-decoration:none;
+}
+.location-picture-bottom  button {
+  color: white;
+  height: 31px;
+  width: 109px;
+  margin-top: 6px;
+  font-size: 11px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.location-picture:hover, .location-picture:active{
+  text-decoration: none;
+ box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}

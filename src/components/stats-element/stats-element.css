@@ -1,0 +1,20 @@
+.stats-element-style {
+  width: 33%;
+  height: 42%;
+  background-color: white;
+  border-radius: 7px;
+  padding-top: 10px;
+  padding-bottom: 10px
+}
+.stats-element-style img {
+  margin-left: 40%;
+}
+.stats-element-style h2 {
+  color: #33b59d;
+  text-align: center;
+}
+.stats-element-style p {
+  text-align: center;
+  font-size: 13px;
+  color: #827388;
+}
