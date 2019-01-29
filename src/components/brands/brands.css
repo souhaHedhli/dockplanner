@@ -1,16 +1,18 @@
 .brand-logo-text {
   margin: 0px 10px;
   height: 30px;
+  color: #c4c4c4;
+  display: inline-block;
 }
 
 .brand-name-style{
-  color: grey;
-  font-size: 20px;
-  font-weight: bold;
+  color: #c4c4c4;
+  font-size: 19px;
+  font-weight: 600;
   text-decoration: none;
 }
 
-.brand-logo-text:hover, .brand-logo-text:active a {
+.brand-logo-text:hover,  .brand-name-style:hover{
   text-decoration: none;
   color:#00c3a5
 }

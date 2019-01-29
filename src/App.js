@@ -115,13 +115,17 @@ class App extends Component {
         <section id="brands">
           <Row className='brand-section'>
             <Col sm='6'>
-              <h1 className='brand-text-style'>
+              <h3 className='brand-text-style'>
                 We are a global company
                 <br/>with local culture
-              </h1>
+              </h3>
             </Col>
             <Col sm='6'>
+            <ul className='list-style'>
+              <li>
               {brands.map((brand, i) => <Brands {...brand} key={i} />)}
+              </li>
+            </ul>
             </Col>
           </Row>
         </section>
