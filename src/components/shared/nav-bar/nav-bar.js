@@ -56,7 +56,7 @@ import {
                   Departements
                 </DropdownToggle>
                 <DropdownMenu right>
-                isof  <DropdownItem>
+                 <DropdownItem>
                     Option 1
                   </DropdownItem>
                   <DropdownItem>
