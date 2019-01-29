@@ -81,6 +81,9 @@
 .offices p{
   color:#747474
 }
+.list-style{
+  list-style: none;
+}
 .location-pictures {
   display: flex;
   flex-wrap: wrap;
