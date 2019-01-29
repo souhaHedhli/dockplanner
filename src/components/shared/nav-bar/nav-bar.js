@@ -17,12 +17,20 @@ import {
  class NavBar extends React.Component {
   constructor(props) {
     super(props);
-
     this.toggle = this.toggle.bind(this);
     this.state = {
-      isOpen: false
-    };
-  }
+    isTop: true,
+    isOpen: false
+  };
+}
+componentDidMount() {
+  document.addEventListener('scroll', () => {
+    const isTop = window.scrollY < 50;
+    if (isTop !== this.state.isTop) {
+        this.setState({ isTop })
+    }
+  })
+}
   toggle() {
     this.setState({
       isOpen: !this.state.isOpen
@@ -30,7 +38,7 @@ import {
   }
   render() {
     return (
-      <div className='main-nav'>
+      <div className={`${this.state.isTop ? 'main-nav' : 'main-nav-alt'}`}>
         <Navbar className='nav-style'  expand="md">
         <img src={logoNav} alt='logo with title' className='logo-nav-style' />
           <NavbarToggler onClick={this.toggle} />
@@ -66,39 +74,5 @@ import {
     );
   }
 }
-
-const test = (function() {
-    var header = (".main-nav");
-    this.window.scroll(function() {
-        var scroll = this.window.scrollTop();
-
-        if (scroll >= 200) {
-            header.addClass("main-nav-alt");
-        }
-    });
-});
-
-
-
-/*const NavBar = () => {
-    return (
-      <Container>
-        <Row className='nav-style'>
-          <Col sm='6'>
-            <img src={logo} alt='logo' className='logo-style' />
-          </Col>
-          <Col sm='2' className=''>
-            <a href='https://docplanner.com' className='link-nav float-right'> About us </a>
-          </Col>
-          <Col sm='1' className='career-style'>
-            <a href='https://docplanner.com/career' className=' link-nav text-center'> Creer </a>
-          </Col>
-          <Col sm='1'>
-            <a href='https://docplanner.com/departements' className='link-nav float-left'> Departements </a>
-          </Col>
-        </Row>
-      </Container>
-    )
-}*/
 
 export default NavBar

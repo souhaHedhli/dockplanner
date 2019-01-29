@@ -61,6 +61,13 @@
   flex-wrap: wrap;
   width: 50%
 }
+.stats{
+  background: #e5faf8;
+    background-image: linear-gradient(-45deg,rgba(0,204,177,.01) 5%,rgba(61,199,223,.1));
+    padding: 1.875em 0 .625em;
+    overflow: hidden;
+    margin: 3.125rem auto 5.5rem
+}
 .offices{
   max-width: 33%;
   margin: 0 auto -3.8125rem;
