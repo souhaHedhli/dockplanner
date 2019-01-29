@@ -129,7 +129,7 @@ class App extends Component {
       </Container>
 
       <section id="stats">
-        <StatsSection />
+        <StatsSection className='stats'/>
       </section>
 
       <header class="offices">
