@@ -1,0 +1,44 @@
+.BiggestHealthcarePlatform {
+  display: flex;
+  background-color: #ccf8f8;
+  height: 600px;
+}
+.bg{
+  background-image: url('../../assets/logo.png');
+  background-repeat: no-repeat;
+  background-size: 500px 400px;
+}
+.BigLogo {
+  width: 50%;
+  overflow: hidden;
+}
+
+.BigLogo h1 {
+  color: #00b59e;
+  margin: 8% 0 0 25%;
+}
+.BigLogo p {
+  color: #827388;
+  margin-left: 25%;
+  font-size: 14px;
+}
+.BigLogo img {
+  margin: 11% 0 0 8%;
+}
+
+.AfterBiggestHealthcarePlatform h1 {
+  text-align: center;
+  margin-top: 6%;
+  color: #33b59d;
+}
+.AfterBiggestHealthcarePlatform p {
+  text-align: center;
+  font-size: 15px;
+  color: #827388;
+  margin-bottom: 6%;
+  line-height: 140%;
+}
+.FourWhiteBoxes :nth-child(odd) {
+  margin-top: 20px;
+  margin-right: 15px;
+}

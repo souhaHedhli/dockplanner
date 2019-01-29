@@ -20,7 +20,7 @@
 .header-section{
   display: block;
   max-width: 100%;
-  padding: 45px;
+  padding: 63px 45px 45px 45px;
 }
 .header-text-style{
   margin-top: 34px;
@@ -46,5 +46,42 @@
 .service{
   display: block;
   max-width: 100%;
-  padding:45px
+  padding-left: 34px;
+  padding-right: 34px
+}
+.brand-section{
+  padding: 34px
+}
+.brand-text-style{
+  color:#00c3a5
+}
+.FourWhiteBoxes {
+  margin-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%
+}
+.offices{
+  max-width: 33%;
+  margin: 0 auto -3.8125rem;
+  font-size: .875em;
+  text-align: center;
+  padding: 71px
+}
+.offices h2{
+  color:#00c3a5
+}
+.offices p{
+  color:#747474
+}
+.location-pictures {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: center;
+  padding: 46px;
+  margin: 0 auto;
+}
+.footer-padding{
+  padding: 5px
 }

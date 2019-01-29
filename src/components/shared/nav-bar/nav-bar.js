@@ -30,7 +30,7 @@ import {
   }
   render() {
     return (
-      <div className=''>
+      <div className='main-nav'>
         <Navbar className='nav-style'  expand="md">
         <img src={logoNav} alt='logo with title' className='logo-nav-style' />
           <NavbarToggler onClick={this.toggle} />
@@ -67,7 +67,16 @@ import {
   }
 }
 
+const test = (function() {
+    var header = (".main-nav");
+    this.window.scroll(function() {
+        var scroll = this.window.scrollTop();
 
+        if (scroll >= 200) {
+            header.addClass("main-nav-alt");
+        }
+    });
+});
 
 
 

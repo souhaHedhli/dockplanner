@@ -6,6 +6,8 @@
   display:flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding-left: 395px;
+  padding-right: 395px;
 }
 .nav-shadow{
   border: 1px solid;
@@ -37,4 +39,17 @@
 }
 .fixed{
   position: fixed;
+}
+.main-nav{
+  position: fixed;
+  background-color: white;
+  z-index: 10000;
+  width: 100%
+}
+.main-nav-alt{
+  position: fixed;
+  background-color: white;
+  z-index: 10000;
+  width: 100%;
+  transition: box-shadow .25s ease 0s;
 }
