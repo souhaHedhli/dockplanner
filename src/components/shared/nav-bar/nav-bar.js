@@ -20,8 +20,17 @@ import {
 
     this.toggle = this.toggle.bind(this);
     this.state = {
-      isOpen: false
+      isOpen: false,
+      isTop: true
     };
+  }
+  componentDidMount() {
+    document.addEventListener('scroll', () => {
+      const isTop = window.scrollY < 100;
+      if (isTop !== this.state.isTop) {
+          this.setState({ isTop })
+      }
+    });
   }
   toggle() {
     this.setState({
@@ -31,8 +40,8 @@ import {
   render() {
     return (
       <div className='main-nav'>
-        <Navbar className='nav-style'  expand="md">
-        <img src={logoNav} alt='logo with title' className='logo-nav-style' />
+        <Navbar className={`nav-style ${!this.state.isTop ? 'bg-primary' : ''}`}  expand="md">
+        <img src={logoNav} alt='logo with title' className='logo-nav-style {}' />
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
@@ -47,7 +56,7 @@ import {
                   Departements
                 </DropdownToggle>
                 <DropdownMenu right>
-                  <DropdownItem>
+                isof  <DropdownItem>
                     Option 1
                   </DropdownItem>
                   <DropdownItem>
